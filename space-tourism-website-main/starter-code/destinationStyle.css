@@ -1,0 +1,176 @@
+body {
+  background-image: url('assets/destination/background-destination-mobile.jpg');
+}
+.everything-destination {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 auto;
+}
+.everything-destination .pickLabel {
+  color: azure;
+  width: 95%;
+}
+.everything-destination .pick_planet {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+.everything-destination .pick_planet .destination{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: url('assets/destination/image-mars.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.information {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: -20px;
+}
+.information .planets {
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  margin-left: -25px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.information .planets li {
+  padding-left: 15px;
+}
+.information .planets li a{
+  text-decoration: none;
+  color: azure;
+
+}
+.information .detailsOnDestination {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.information .detailsOnDestination .planetName {
+  font-size: 80px;
+  color: azure;
+  margin-top: -8px;
+}
+.information .detailsOnDestination .details {
+  width: 90%;
+  font-size: 15px;
+  color: azure;
+  text-align: center;
+  margin-top: -36px;
+}
+.information .average-d-tt {
+  border-top: 2px solid lightgrey;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+.information .average-d-tt h2, p {
+  margin-bottom: -10px;
+}
+.information .average-d-tt .average-distance, .average-time {
+  color: white;
+  font-weight: 900;
+}
+.average-distance-value, .average-time-value {
+  color: gold;
+  font-weight: 900;
+}
+@media (min-width: 375px) {
+  body {
+    background: url('assets/destination/background-destination-tablet.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .homeNav {
+    border:0;
+  }
+  .destinationNav {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+  }
+  .crewNav {
+    border:0;
+  }
+  .technologyNav {
+    border:0;
+  }
+}
+@media (min-width: 750px) {
+  body {
+    background: url('assets/destination/background-destination-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .everything-destination {
+    flex-direction: row;
+  }
+  .everything-destination .pickLabel {
+    font-size: 25px;
+    text-align: center;
+  }
+  .everything-destination .pick_planet .destination{
+    width: 300px;
+    height: 300px;
+  }
+  .information {
+    width: 70%;
+    margin-top: 50px;
+    margin-right: 40px;
+  }
+  .information .planets {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: -40px;
+  }
+  .information .planets li {
+    padding-right: 15px;
+  }
+  .information .detailsOnDestination {
+    align-items: flex-start;
+  }
+  .information .detailsOnDestination .planetName {
+    font-size: 100px;
+  }
+  .information .detailsOnDestination .details {
+    width: 90%;
+    font-size: 15px;
+    color: azure;
+    text-align: left;
+    margin-top: -66px;
+  }
+  .information .average-d-tt {
+    flex-direction: column;
+  }
+  .average-d-tt > * {
+    width: 100%;
+  }
+}

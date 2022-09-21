@@ -1,0 +1,251 @@
+*{
+  box-sizing: border-box;
+  font-family: Courier New, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/home/background-home-mobile.jpg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+.navigation {
+  width: 100vw;
+  height: 4rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 0;
+
+}
+.navigation .nav_elements {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 6rem 1rem;
+  margin: 0;
+  list-style: none;
+  background-color: hsl(0 0% 100% / 0.1);
+  opacity: 0.8;
+  backdrop-filter: blur(2rem);
+ z-index: 1000;
+ transform: translateX(100%);
+ transition: transform 350ms ease-out;
+
+}
+.navigation .nav_elements li{
+  padding-bottom: 0;
+  flex-shrink: 1;
+}
+
+.navigation .nav_elements a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+.navigation .logo {
+  margin: auto 17px;
+  width: 38px;
+}
+.imgLogo {
+  width: 100%;
+}
+.menuLogo {
+  width: 2rem;
+  aspect-ratio: 1;
+  background: url('assets/shared/icon-hamburger.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9999;
+  margin: 1rem;
+}
+.navigation .nav_elements[data-visible="true"] {
+  transform: translateX(0%);
+
+}
+.menuLogo[aria-expanded="true"] {
+  background: url('assets/shared/icon-close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.container {
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  align-items: center;
+  margin: 0 30px 0 30px;
+}
+.catchphrase {
+  text-align: center;
+}
+.catchphrase h3 {
+  font-size: 16px;
+}
+.catchphrase h1 {
+  font-size: 70px;
+  font-weight: 900;
+  margin-top: -10px;
+  letter-spacing: 8px;
+}
+.description {
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
+}
+.exploreBtn {
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 700;
+  font-size: 19px;
+  margin-top: 25px;
+}
+@media (min-width: 450px) {
+  body {
+    background-image: url('assets/home/background-home-tablet.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .navigation .nav_elements {
+    flex-direction: row;
+    align-items: center;
+    bottom: 90%;
+    top: 10px;
+    left: 20%;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    transform: translateX(0);
+  }
+  .menuLogo {
+    display: none;
+  }
+  .navigation .nav_elements li a{
+    font-size: 1.1rem;
+  }
+  .navigation .nav_elements li span{
+     display: none;
+  }
+  /*
+  .navigation .nav_elements {
+    position: fixed;
+    top: 5px;
+    left: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    gap: 30px;
+    padding: 1rem;
+    list-style: none;
+    width: 500px;
+    background-color: darkgrey;
+    height: 60px;
+  } */
+
+  .hamburger {
+    display: none;
+  }
+  .catchphrase {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .description {
+    width: 100%;
+  }
+  .exploreBtn {
+    width: 8rem;
+    height: 8rem;
+  }
+  .homeNav {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+  }
+  .destinationNav {
+    border:0;
+  }
+  .crewNav {
+    border:0;
+  }
+  .technologyNav {
+    border:0;
+  }
+}
+@media (min-width: 800px) {
+   body {
+     background-image: url('assets/home/background-home-desktop.jpg');
+     background-size: cover;
+   }
+   .navigation .nav_elements {
+     flex-direction: row;
+     align-items: center;
+     bottom: 90%;
+     top: 10px;
+     left: 30%;
+     gap: 30px;
+     padding: 0;
+     padding-left: 5px;
+     padding-right: 5px;
+   }
+   .navigation .nav_elements li{
+      display: block ruby;
+
+   }
+
+   .navigation .nav_elements li span {
+     display: block;
+   }
+   .container {
+     display: flex;
+     flex-direction: row;
+    justify-content: space-between;
+   }
+   .container .catchphrase {
+     width: 50%;
+     text-align: left;
+     margin-top: 100px;
+   }
+  .logo {
+    width: 50px;
+  }
+  .imgLogo {
+    width: 100%;
+  }
+   .catchphrase h3{
+     font-size: 23px;
+     margin-bottom: -15px;
+   }
+   .catchphrase h1{
+     font-size: 120px;
+   }
+   .description {
+     margin-top: -50px;
+     min-width: 50%;
+     text-align: left;
+   }
+   .exploreBtn {
+     width: 10rem;
+     height: 10rem;
+     color: grey;
+     font-size: 26px;
+   }
+}

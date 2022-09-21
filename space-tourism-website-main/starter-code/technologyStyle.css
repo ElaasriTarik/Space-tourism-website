@@ -1,0 +1,174 @@
+*{
+  box-sizing: border-box;
+  color: azure;
+  font-family: Trebuchet MS;
+}
+body {
+  background: url('assets/technology/background-technology-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+.everything-technology {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.everything-technology .label {
+  font-size: 1.4rem;
+}
+.labelImage {
+  width: 98%;
+  height: 16rem;
+  background-image: url('assets/technology/image-space-capsule-portrait.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.imageAndLabel {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.everything-technology .stages {
+  width: 70%;
+  display: flex;
+  list-style: none;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+  padding: 0;
+}
+.everything-technology .stages > * {
+  width: 30px;
+  aspect-ratio: 1;
+  border: 2px solid darkgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 800;
+  cursor: pointer;
+  color: darkgrey;
+}
+.descriptionOfStage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.descriptionOfStage h3 {
+  color: #d3dfdc;
+  font-size: 1.1rem;
+}
+.nameOfStage {
+  margin-top: -15px;
+  font-size: 2.5rem;
+  color: darkgrey;
+}
+.description {
+  width: 85%;
+  text-align: center;
+}
+.homeNav {
+  border:0;
+}
+.destinationNav {
+  border:0;
+}
+.crewNav {
+  border:0;
+}
+.technologyNav {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 450px) {
+  body {
+    background-image: url('assets/technology/background-technology-tablet.jpg');
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .labelImage {
+    width: 70%;
+    height: 24rem;
+  }
+  .imageAndLabel {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 800px) {
+   body {
+     background-image: url('assets/technology/background-technology-desktop.jpg');
+     background-position: center;
+     background-size: cover;
+     background-position: center;
+   }
+   .labelImage {
+     width: 100%;
+     height: 23rem;
+     background-image: url('assets/technology/image-space-capsule-portrait.jpg');
+     background-position: center;
+     background-size: cover;
+   }
+   .label {
+    margin-top: 0;
+   }
+   .everything-technology {
+     flex-direction: row-reverse;
+     justify-content: space-around;
+     position: relative;
+     text-align: left;
+   }
+   .everything-technology > * {
+     position: relative;
+   }
+   .descriptionOfStage {
+     left: 0;
+     top: 50%;
+     align-items: baseline;
+   }
+   .descriptionOfStage > * {
+     margin-bottom: 20px;
+   }
+   .stages {
+ position: relative;
+ bottom: 0;
+ flex-direction: column;
+ gap: 50px;
+   }
+   .descriptionOfStage .nameOfStage {
+     text-align: left;
+     left: 0;
+     margin-left: 0;
+     padding: 0;
+   }
+   .descriptionOfStage p {
+     margin-top: 0;
+     text-align: left;
+
+   }
+   .imageAndLabel {
+     display: flex;
+     flex-direction: column;
+     margin-right: 0;
+     width: 120rem;
+     margin-top: 20px;
+     align-items: baseline;
+     padding: 4px;
+   }
+ }
