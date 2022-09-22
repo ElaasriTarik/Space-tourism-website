@@ -1,0 +1,129 @@
+body {
+   background-image: url('assets/crew/background-crew-mobile.jpg');
+   background-size: cover;
+}
+* {
+  color: azure;
+}
+.everything-crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.everything-crew h2 {
+  font-size: 1.4rem;
+}
+.meetYourCrew {
+  width: 75%;
+}
+.crewImage {
+  width: 100%;
+  aspect-ratio: 1;
+  background-image: url('assets/crew/image-douglas-hurley.webp');
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.choose {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  margin: 0 auto;
+}
+.choose span{
+  width: 8%;
+  aspect-ratio:1;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.info h3 {
+  color: darkgrey;
+  margin-bottom: 5px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:0;
+}
+.info h2 {
+  margin: -10px;
+}
+.info p {
+  width: 94%;
+  text-align: center;
+}
+
+.homeNav {
+  border:0;
+}
+.destinationNav {
+  border:0;
+}
+.crewNav {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+.technologyNav {
+  border:0;
+}
+@media (min-width: 400px) {
+  body {
+     background-image: url('assets/crew/background-crew-tablet.jpg');
+     background-size: cover;
+  }
+  .meetYourCrew {
+    width: 45%;
+  }
+  .crewImage {
+    width: 100%;
+  }
+  .choose {
+    width: 40%;
+    gap: 15px;
+  }
+}
+@media (min-width: 800px) {
+  body {
+     background-image: url('assets/crew/background-crew-desktop.jpg');
+     background-position: top;
+
+  }
+  .everything-crew {
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 20%;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 30px;
+    display: inline-flex;
+    padding: 0 70px;
+  }
+  .info p {
+    text-align: left;
+    width: 100%
+  }
+  .choose {
+    flex-direction: column;
+    width: 10rem;
+    gap: 30px;
+    margin-right: -20px;
+  }
+  .info {
+    gap: 20px;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+      width: 20rem;
+  }
+  .meetYourCrew {
+    width: 20rem;
+  }
+  .crewImage {
+    width: 90%;
+    position: relative;
+    right: 0;
+  }
+}
